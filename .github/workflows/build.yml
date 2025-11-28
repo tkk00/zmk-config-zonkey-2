@@ -1,5 +1,22 @@
-on: [push, pull_request, workflow_dispatch]
+if SHIELD_ZONKEY_R
 
-jobs:
-  build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+config ZMK_KEYBOARD_NAME
+    default "zonkey_R"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_ZONKEY_L
+
+config ZMK_KEYBOARD_NAME
+    default "zonkey_L"
+
+config ZMK_SPLIT
+    default y
+
+endif
