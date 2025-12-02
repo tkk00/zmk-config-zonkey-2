@@ -1,4 +1,6 @@
 {
+  "id": "zonkey",
+  "name": "zonkey",
   "layouts": {
     "default_layout": {
       "name": "default_layout",
