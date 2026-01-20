@@ -52,7 +52,7 @@
 
         /* オートマウス一時レイヤー */
         temp_layer_handler {
-            layers = <0 1 2 3 4 6 7>;
+            layers = <0 1 2 3 4 7>;
             input-processors =
                 <&zip_temp_layer 6 10000>;
         };
