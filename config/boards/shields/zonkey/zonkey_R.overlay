@@ -1,4 +1,6 @@
 #include "zonkey.dtsi"
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/pointing.h>
 
 &default_transform {
     col-offset = <6>;
@@ -14,11 +16,46 @@
             ;
 };
 
-/ {
+&zip_temp_layer {
+    excluded-positions = <
+        19 // K
+        20 // l
+        21 // ;
+        22 // shift
+        34 // Ctrl
+    >;
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+};
+
+/{
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+        /* Snip（微調整） */
+        snipe_handler {
+            layers = <2>;
+            input-processors =
+                <&zip_xy_scaler 1 2>;
+            process-next;
+        };
+
+        heavy_snipe_handler {
+            layers = <3>;
+            input-processors =
+                <&zip_xy_scaler 1 4>;
+            process-next;
+        };
+
+        /* オートマウス一時レイヤー */
+        temp_layer_handler {
+            layers = <0 1 2 3 4 6 7>;
+            input-processors =
+                <&zip_temp_layer 6 10000>;
+        };
     };
 };
 
@@ -55,8 +92,6 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        automouse-layer = <6>;
         scroll-layers = <5>;
-
     };
 };
