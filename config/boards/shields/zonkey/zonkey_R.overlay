@@ -1,5 +1,7 @@
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 1
 #include "zonkey.dtsi"
 #include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &default_transform {
@@ -34,6 +36,15 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        /* レイヤー5：スクロール */
+        scroller {
+            layers = <5>;
+            input-processors =
+                <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+                <&zip_scroll_scaler 1 300>,
+                <&zip_xy_to_scroll_mapper>;
+        };
 
         /* Snip（微調整） */
         snipe_handler {
@@ -92,6 +103,5 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        scroll-layers = <5>;
     };
 };
