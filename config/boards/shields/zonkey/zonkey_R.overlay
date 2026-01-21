@@ -42,10 +42,8 @@
             layers = <5>;
             input-processors =
                     <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-                    <&zip_scroll_scaler 1 16>,
-                    <&zip_scroll_scaler 1 16>,
-                    <&zip_scroll_scaler 1 16>,
-                    <&zip_xy_to_scroll_mapper>;
+                    <&zip_xy_to_scroll_mapper>,
+                    <&zip_scroll_scaler 1 16>;
         };
 
         /* Snip（微調整） */
