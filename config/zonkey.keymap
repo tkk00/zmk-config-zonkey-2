@@ -304,13 +304,13 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                          &trans
-            >;
+&kp F1            &kp F2        &kp F3         &kp F4          &kp F5                                          &kp LC(HOME)        &kp HOME         &kp UP_ARROW         &kp END              &kp LC(END)
+&kp F6            &kp F7        &kp F8         &kp F9          &kp F10    &trans            &mt RIGHT_ALT TAB  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW   &kp DOWN             &kp RIGHT            &kp LC(RIGHT)
+&kp LEFT_SHIFT    &kp JP_TILDE  &kp JP_DQUOTE  &kp JP_COLON    &kp F11    &kp F12           &kp DELETE         &kp JP_LBRACKET     &kp JP_RBRACKET  &kp LS(JP_LBRACKET)  &kp LS(JP_RBRACKET)  &kp QUESTION
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT   &kp LANGUAGE_2  &kp SPACE  &kp LANGUAGE_1                       &kp LEFT_WIN        &mt RALT TAB                                                              &kp JP_PIPE
+    >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_horizontal>;
         };
 
         layer_5 {
