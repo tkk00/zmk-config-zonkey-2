@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 #include "zonkey.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
@@ -20,6 +20,7 @@
 
 &zip_temp_layer {
     excluded-positions = <
+        18 // j
         19 // K
         20 // l
         21 // ;
@@ -65,7 +66,7 @@
         temp_layer_handler {
             layers = <0 1 2 3 4 7>;
             input-processors =
-                <&zip_temp_layer 6 10000>;
+                <&zip_temp_layer 6 100000>;
         };
     };
 };
