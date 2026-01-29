@@ -61,11 +61,6 @@
             key-positions = <1 0>;
         };
 
-        tap_tab {
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
-        };
-
         tap_shift_caps {
             bindings = <&kp LS(CAPS)>;
             key-positions = <23 24>;
@@ -276,10 +271,10 @@
 
         layer_1 {
             bindings = <
-&kp EXCLAMATION   &kp JP_AT         &kp HASH      &kp DOLLAR      &kp PERCENT                                             &kp JP_CARET  &kp JP_AMPERSAND  &kp JP_ASTERISK  &kp JP_LPAREN  &kp JP_RPAREN
-&kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5       &trans            &mt RIGHT_ALT TAB  &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8     &kp NUMBER_9   &kp NUMBER_0
-&kp LEFT_SHIFT    &kp JP_BACKQUOTE  &kp JP_QUOTE  &kp SEMICOLON   &kp JP_UNDERSCORE  &kp JP_PLUS       &kp DEL            &kp JP_EQUAL  &kp JP_PLUS       &kp COMMA        &kp PERIOD     &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN      &kp LEFT_ALT  &kp LANGUAGE_2  &kp SPACE          &kp LANGUAGE_1                       &kp LEFT_WIN  &mt RALT TAB                                                     &kp JP_BSLH
+&kp EXCLAMATION   &kp JP_AT         &kp HASH      &kp DOLLAR      &kp PERCENT                                             &kp JP_CARET   &kp JP_AMPERSAND  &kp JP_ASTERISK  &kp JP_LPAREN  &kp JP_RPAREN
+&kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5       &trans            &mt RIGHT_ALT TAB  &kp NUMBER_6   &kp NUMBER_7      &kp NUMBER_8     &kp NUMBER_9   &kp NUMBER_0
+&kp LEFT_SHIFT    &kp JP_BACKQUOTE  &kp JP_QUOTE  &kp SEMICOLON   &kp JP_UNDERSCORE  &kp JP_PLUS       &kp DEL            &kp JP_EQUAL   &kp JP_PLUS       &kp COMMA        &kp PERIOD     &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_WIN      &kp LEFT_ALT  &kp LANGUAGE_2  &kp SPACE          &kp LANGUAGE_1                       &kp BACKSPACE  &kp ENTER                                                        &kp JP_BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -322,7 +317,7 @@
             bindings = <
 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                             &trans  &trans  &trans           &trans     &trans
 &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans       &trans       &trans  &trans  &kp LC(PAGE_UP)  &kp LC(T)  &kp LC(PAGE_DOWN)
-&trans         &trans         &trans         &bt BT_CLR     &trans         &trans       &bootloader  &trans  &trans  &mkp MB4         &none      &mkp MB5
+&trans         &trans         &trans         &bt BT_CLR     &trans         &trans       &bootloader  &trans  &trans  &kp LC(PAGE_UP)  &none      &kp LC(PAGE_DOWN)
 &trans         &trans         &trans         &trans         &trans         &kp GRAVE                 &trans  &trans                                                 &kp LC(W)
             >;
 
@@ -331,10 +326,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB1  &mkp MB3  &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
