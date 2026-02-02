@@ -293,10 +293,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans            &trans                                      &trans         &trans        &kp LS(RIGHT)  &kp LS(LC(RIGHT))  &kp LS(END)
-&trans  &trans  &trans  &trans            &trans       &kp C_MUTE            &trans   &trans         &trans        &mkp MB1       &mkp MB3           &mkp MB2
-&trans  &trans  &trans  &trans            &trans       &kp DELETE            &kp DEL  &trans         &trans        &mkp MB1       &mkp MB3           &kp LA(TAB)
-&trans  &trans  &trans  &lt 7 INT_HENKAN  &lt 4 SPACE  &lt 5 INT_MUHENKAN             &kp BACKSPACE  &kp KP_ENTER                                                 &trans
+&trans  &trans  &trans  &trans            &trans                                      &trans         &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans       &kp C_MUTE            &trans   &trans         &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans       &kp DELETE            &kp DEL  &trans         &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &lt 7 INT_HENKAN  &lt 4 SPACE  &lt 5 INT_MUHENKAN             &kp BACKSPACE  &kp KP_ENTER                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(C_VOLUME_DOWN) LC(C_VOLUME_UP)>;
