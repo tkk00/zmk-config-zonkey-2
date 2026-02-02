@@ -3,6 +3,7 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <scroll-snap.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -43,6 +44,7 @@
             input-processors =
                     <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
                     <&zip_xy_to_scroll_mapper>,
+                    <&zip_scroll_snap>,
                     <&zip_scroll_scaler 1 16>;
         };
 
