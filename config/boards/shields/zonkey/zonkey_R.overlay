@@ -23,7 +23,6 @@
         18 // j
         19 // K
         20 // l
-        21 // ;
         22 // shift
         34 // Ctrl
     >;
@@ -40,7 +39,7 @@
 
         /* レイヤー5：スクロール */
         scroller {
-            layers = <5>;
+            layers = <3 5>;
             input-processors =
                     <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
                     <&zip_xy_to_scroll_mapper>,
@@ -55,16 +54,10 @@
             process-next;
         };
 
-        heavy_snipe_handler {
-            layers = <3>;
-            input-processors =
-                <&zip_xy_scaler 1 4>;
-            process-next;
-        };
 
         /* オートマウス一時レイヤー */
         temp_layer_handler {
-            layers = <0 1 2 3 4 7>;
+            layers = <0 1 2 4 7>;
             input-processors =
                 <&zip_temp_layer 6 100000>;
         };
