@@ -282,10 +282,10 @@
 
         layer_2 {
             bindings = <
-&kp F1            &kp F2        &kp F3         &kp F4          &kp F5                                          &kp LC(HOME)            &kp HOME                 &kp UP_ARROW            &kp END                  &kp LC(END)
-&kp F6            &kp F7        &kp F8         &kp F9          &kp F10    &trans            &mt RIGHT_ALT TAB  &kp LC(LEFT_ARROW)      &kp LEFT_ARROW           &kp DOWN                &kp RIGHT                &kp LC(RIGHT)
-&kp LEFT_SHIFT    &kp INS       &kp JP_DQUOTE  &kp LG(SLASH)   &kp F11    &kp F12           &kp DELETE         &kp LG(TAB)             &kp LG(LS(LEFT_ARROW))   &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp QUESTION
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT   &kp LANGUAGE_2  &kp SPACE  &kp LANGUAGE_1                       &mt LEFT_WIN BACKSPACE  &mt RIGHT_ALT BACKSPACE                                                                  &kp JP_PIPE
+&kp F1            &kp F2        &kp F3         &kp F4          &kp F5                                          &kp LC(LG(LEFT_ARROW))  &kp HOME                 &kp UP_ARROW            &kp END            &kp LC(LG(RIGHT_ARROW))
+&kp F6            &kp F7        &kp F8         &kp F9          &kp F10    &trans            &mt RIGHT_ALT TAB  &kp LC(LEFT_ARROW)      &kp LEFT_ARROW           &kp DOWN                &kp RIGHT          &kp LC(RIGHT)
+&kp LEFT_SHIFT    &kp INS       &kp JP_DQUOTE  &kp LG(SLASH)   &kp F11    &kp F12           &kp DELETE         &kp LG(TAB)             &kp LC(PAGE_UP)          &kp LG(LS(LEFT_ARROW))  &kp LC(PAGE_DOWN)  &kp PAGE_UP
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT   &kp LANGUAGE_2  &kp SPACE  &kp LANGUAGE_1                       &mt LEFT_WIN BACKSPACE  &mt RIGHT_ALT BACKSPACE                                                                      &kp PAGE_DOWN
             >;
 
             sensor-bindings = <&scroll_horizontal>;
