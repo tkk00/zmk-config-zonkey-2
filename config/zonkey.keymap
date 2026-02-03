@@ -304,10 +304,10 @@
 
         layer_4 {
             bindings = <
-&kp F1            &kp F2        &kp F3         &kp F4                &kp F5                                     &kp LC(HOME)        &kp HOME                 &kp UP_ARROW            &kp END                  &kp LC(END)
-&kp F6            &kp F7        &kp F8         &kp F9                &kp F10       &trans          &kp LA(TAB)  &kp LC(LEFT_ARROW)  &kp LEFT_ARROW           &kp DOWN                &kp RIGHT                &kp LC(RIGHT)
-&kp LEFT_SHIFT    &kp JP_TILDE  &kp JP_DQUOTE  &kp JP_COLON          &kp F11       &kp F12         &kp DELETE   &kp LG(TAB)         &kp LS(LG(RIGHT_ARROW))  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp QUESTION
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT   &kp RA(LEFT_CONTROL)  &kp LEFT_GUI  &kp LEFT_ALT                 &kp LEFT_WIN        &mt RALT TAB                                                                             &kp JP_PIPE
+&kp F1               &kp F2                   &kp F3           &kp F4                &kp F5                                             &kp LG(LC(LEFT_ARROW))  &kp HOME         &kp UP_ARROW            &kp END            &kp LC(LG(RIGHT_ARROW))
+&mt LEFT_CONTROL F6  &mt LS(LEFT_CONTROL) F7  &mt LEFT_ALT F8  &mt LEFT_WIN F9       &mt LEFT_CONTROL F10  &trans          &kp LA(TAB)  &kp LC(LEFT_ARROW)      &kp LEFT_ARROW   &kp DOWN                &kp RIGHT          &kp LC(RIGHT)
+&kp LEFT_SHIFT       &kp JP_TILDE             &kp JP_DQUOTE    &kp JP_COLON          &kp F11               &kp F12         &kp DELETE   &kp LG(TAB)             &kp LC(PAGE_UP)  &kp LS(LG(LEFT_ARROW))  &kp LC(PAGE_DOWN)  &kp QUESTION
+&kp LEFT_CONTROL     &kp LEFT_WIN             &kp LEFT_ALT     &kp RA(LEFT_CONTROL)  &kp LEFT_GUI          &kp LEFT_ALT                 &kp LEFT_WIN            &mt RALT TAB                                                                         &kp JP_PIPE
             >;
 
             sensor-bindings = <&scroll_horizontal>;
@@ -317,8 +317,8 @@
             bindings = <
 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                             &trans  &trans           &trans  &trans             &trans
 &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans       &trans       &trans  &trans           &trans  &trans             &kp C_MUTE
-&trans         &trans         &trans         &bt BT_CLR     &trans         &trans       &bootloader  &trans  &kp LS(PAGE_UP)  &trans  &kp LC(PAGE_DOWN)  &kp K_VOLUME_UP
-&trans         &trans         &trans         &trans         &trans         &kp GRAVE                 &trans  &trans                                                       &kp K_VOLUME_DOWN
+&trans         &trans         &trans         &bt BT_CLR     &trans         &trans       &bootloader  &trans  &kp LC(PAGE_UP)  &trans  &kp LC(PAGE_DOWN)  &kp C_VOLUME_UP
+&trans         &trans         &trans         &trans         &trans         &kp GRAVE                 &trans  &trans                                                       &kp C_VOLUME_DOWN
             >;
 
             sensor-bindings = <&scroll_horizontal>;
