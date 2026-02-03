@@ -306,8 +306,8 @@
             bindings = <
 &kp F1               &kp F2                   &kp F3           &kp F4                &kp F5                                             &kp LG(LC(LEFT_ARROW))  &kp HOME         &kp UP_ARROW            &kp END            &kp LC(LG(RIGHT_ARROW))
 &mt LEFT_CONTROL F6  &mt LS(LEFT_CONTROL) F7  &mt LEFT_ALT F8  &mt LEFT_WIN F9       &mt LEFT_CONTROL F10  &trans          &kp LA(TAB)  &kp LC(LEFT_ARROW)      &kp LEFT_ARROW   &kp DOWN                &kp RIGHT          &kp LC(RIGHT)
-&kp LEFT_SHIFT       &kp JP_TILDE             &kp JP_DQUOTE    &kp JP_COLON          &kp F11               &kp F12         &kp DELETE   &kp LG(TAB)             &kp LC(PAGE_UP)  &kp LS(LG(LEFT_ARROW))  &kp LC(PAGE_DOWN)  &kp QUESTION
-&kp LEFT_CONTROL     &kp LEFT_WIN             &kp LEFT_ALT     &kp RA(LEFT_CONTROL)  &kp LEFT_GUI          &kp LEFT_ALT                 &kp LEFT_WIN            &mt RALT TAB                                                                         &kp JP_PIPE
+&kp LEFT_SHIFT       &kp JP_TILDE             &kp JP_DQUOTE    &kp JP_COLON          &kp F11               &kp F12         &kp DELETE   &kp LG(TAB)             &kp LC(PAGE_UP)  &kp LS(LG(LEFT_ARROW))  &kp LC(PAGE_DOWN)  &kp PAGE_UP
+&kp LEFT_CONTROL     &kp LEFT_WIN             &kp LEFT_ALT     &kp RA(LEFT_CONTROL)  &kp LEFT_GUI          &kp LEFT_ALT                 &kp LEFT_WIN            &mt RALT TAB                                                                         &kp PAGE_DOWN
             >;
 
             sensor-bindings = <&scroll_horizontal>;
