@@ -271,10 +271,10 @@
 
         layer_1 {
             bindings = <
-&kp EXCLAMATION   &kp JP_AT      &kp HASH      &kp DOLLAR      &kp PERCENT                                            &kp JP_CARET             &kp JP_AMPERSAND    &kp JP_ASTERISK  &kp JP_LPAREN    &kp JP_RPAREN
-&kp NUMBER_1      &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5   &trans               &mt RIGHT_ALT TAB  &kp NUMBER_6             &kp NUMBER_7        &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0
-&kp LEFT_SHIFT    &kp SEMICOLON  &kp JP_COLON  &kp JP_QUOTE    &kp JP_DQUOTE  &kp JP_UNDERSCORE    &kp DEL            &kp JP_EQUAL             &kp JP_PLUS         &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_BACKQUOTE
-&kp LEFT_CONTROL  &kp LEFT_WIN   &kp LEFT_ALT  &kp LANGUAGE_2  &kp SPACE      &kp LANGUAGE_1                          &mt RIGHT_GUI BACKSPACE  &mt LEFT_ALT ENTER                                                      &kp JP_TILDE
+&kp EXCLAMATION   &kp LEFT_BRACKET  &kp HASH          &kp DOLLAR      &kp PERCENT                                           &kp EQUAL                &kp CARET           &kp DOUBLE_QUOTES  &kp ASTRK      &kp LEFT_PARENTHESIS
+&kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4    &kp NUMBER_5  &trans               &mt RIGHT_ALT TAB  &kp NUMBER_6             &kp NUMBER_7        &kp NUMBER_8       &kp NUMBER_9   &kp NUMBER_0
+&kp LEFT_SHIFT    &kp SEMICOLON     &kp SINGLE_QUOTE  &kp AMPERSAND   &kp AT_SIGN   &kp JP_UNDERSCORE    &kp DEL            &kp UNDER                &kp COLON           &kp RIGHT_BRACKET  &kp BACKSLASH  &kp LEFT_BRACE
+&kp LEFT_CONTROL  &kp LEFT_WIN      &kp LEFT_ALT      &kp LANGUAGE_2  &kp SPACE     &kp LANGUAGE_1                          &mt RIGHT_GUI BACKSPACE  &mt LEFT_ALT ENTER                                                          &kp PLUS
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
